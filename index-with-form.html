@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Data plan packages</title>	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900" rel="stylesheet">	
+	<link rel="stylesheet" href="css/bootstrap-skinny.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="site">
+	<header class="site__header">
+		<h1>Lit</h1>
+		<nav>
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Packages</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+	</header><!-- .site__header -->
+	
+	<section class="site__hero">
+		<h1>Plan <small>your</small> <span>data</span></h1>
+		<p>Choose your data, text, minutes and amount of sim cards</p>
+	</section><!-- .site__hero -->
+
+	<main class="site__main">
+		
+		<section>
+			<h2>Choose your plan</h2>
+			<p>Pick a plan that suits you. If you exceed your download limit, your plan will freeze. We won't surprise you or charge any more than what has been agreed.</p>
+		</section>
+
+		<!-- Tabbed navigation section for the three plans -->
+		<ul class="nav nav-tabs flex-column flex-sm-row" id="plan--tabs" role="tablist">
+			<li class="flex-sm-fill text-sm-center nav-item">
+				<a class="nav-link active" id="wolf-tab" data-toggle="tab" href="#wolf" role="tab" aria-controls="wolf" aria-selected="true">
+					<img src="images/lone-wolf.svg" alt="">
+					<h2>Lone Wolf</h2>
+				</a>
+			</li>
+			<li class="flex-sm-fill text-sm-center nav-item">
+				<a class="nav-link" id="chatterbox-tab" data-toggle="tab" href="#chatterbox" role="tab" aria-controls="chatterbox" aria-selected="false">
+					<img src="images/chatterbox.svg" alt="">
+					<h2>Chatterbox</h2>
+				</a>
+			</li>
+			<li class="flex-sm-fill text-sm-center nav-item">
+				<a class="nav-link" id="family-tab" data-toggle="tab" href="#family" role="tab" aria-controls="family" aria-selected="false">
+					<img src="images/family.svg" alt="">
+					<h2>Family</h2>
+				</a>
+			</li>
+		</ul>
+		
+		<!--- The individual plans -->
+		<div class="tab-content" id="plan--content">
+			<section id="wolf" class="tab-pane fade show active plan" role="tabpanel" aria-labelledby="wolf-tab">
+				<h3>Data only</h3>
+				<form>
+					<h4>Choose GB per month</h4>
+					<ul>
+						<li>
+							<label for="wolf--3gb">
+							<input type="radio" name="plan--price" id="wolf--3gb" value="15">
+							<span>3GB / £15.00</span></label>
+						</li>
+						<li>
+							<label for="wolf--6gb">
+							<input type="radio" name="plan--price" id="wolf--6gb" value="17">
+							<span>6GB / £17.00</span></label>
+						</li>
+						<li>
+							<label for="wolf--15gb">
+							<input type="radio" name="plan--price" id="wolf--15gb" value="22">
+							<span>15GB / £22.00</span></label>
+						</li>
+						<li>
+							<label for="wolf--30gb">
+							<input type="radio" name="plan--price" id="wolf--30gb" value="27">
+							<span>30GB / £27.00</span></label>
+						</li>
+					</ul>
+						
+					<h4>Payment schedule</h4>
+					<ul>
+						<li>
+							<label for="wolf--monthly">
+							<input type="radio" name="plan--schedule" id="wolf--monthly" value="monthly">
+							<span>monthly</span></label>
+						</li>
+						<li>
+							<label for="wolf--annually">
+							<input  type="radio" name="plan--schedule" id="wolf--annually" value="annually">
+							<span>annually</span></label>
+						</li>
+					</ul>
+						
+					<button id="wolf--calculate">Calculate price</button>
+				</form>
+				<footer class="plan--cost">
+					<p></p>
+				</footer>
+			</section>
+			
+			<section id="chatterbox" class="tab-pane fade plan" role="tabpanel" aria-labelledby="chatterbox-tab">
+				<h3>Data, minutes and texts</h3>
+				<form>
+					<h4>Choose GB per month</h4>
+					<ul>
+						<li>
+							<label for="chatterbox--1gb">
+							<input type="radio" name="plan--price" id="chatterbox--1gb" value="14">
+							<span>1GB / £14.00</span></label>
+						</li>
+						<li>
+							<label for="chatterbox--6gb">
+							<input type="radio" name="plan--price" id="chatterbox--6gb" value="18">
+							<span>6GB / £18.00</span></label>
+						</li>
+						<li>
+							<label for="chatterbox--10gb">
+							<input type="radio" name="plan--price" id="chatterbox--10gb" value="20">
+							<span>10GB / £20.00</span></label>
+						</li>
+						<li>
+							<label for="chatterbox--20gb">
+							<input type="radio" name="plan--price" id="chatterbox--20gb" value="30">
+							<span>20GB / £30.00</span></label>
+						</li>
+					</ul>
+			
+					<h4>Choose minutes per month</h4>
+					<ul>
+						<li>
+							<label for="chatterbox--180min">
+							<input type="radio" name="plan--min" id="chatterbox--180min" value="3">
+							<span>180 min + £3.00</span></label>
+						</li>
+						<li>
+							<label for="chatterbox--300min">
+							<input type="radio" name="plan--min" id="chatterbox--300min" value="5">
+							<span>300 min + £5.00</span></label>
+						</li>
+						<li>
+							<label for="chatterbox--600min">
+							<input type="radio" name="plan--min" id="chatterbox--600min" value="10">
+							<span>600 min + £10.00</span></label>
+						</li>
+						<li>
+							<label for="chatterbox--unlimited">
+							<input type="radio" name="plan--min" id="chatterbox--unlimited" value="12">
+							<span>unlimited + £12.00</span></label>
+						</li>
+					</ul>
+					
+					<h4>Payment schedule</h4>
+					<ul>
+						<li>
+							<label for="chatterbox--monthly">
+							<input type="radio" name="plan--schedule" id="chatterbox--monthly" value="monthly">
+							<span>monthly</span></label>
+						</li>
+						<li>
+							<label for="chatterbox--annually">
+							<input  type="radio" name="plan--schedule" id="chatterbox--annually" value="annually">
+							<span>annually</span></label>
+						</li>
+					</ul>
+					<button id="chatterbox--calculate">Calculate price</button>
+				</form>
+				<footer class="plan--cost">
+					<p></p>
+				</footer>
+				
+			</section>
+			
+			<section id="family" class="tab-pane fade plan" role="tabpanel" aria-labelledby="family-tab">
+				<h3>Up to 4 sim cards with data, minutes and texts</h3>
+				<h4>Choose number of sim cards</h4>
+				<button type="button" name="plan--cards" id="family--1" value="1">1</button>
+				<button type="button" name="plan--cards" id="family--2" value="2">2</button>
+				<button type="button" name="plan--cards" id="family--3" value="3">3</button>
+				<button type="button" name="plan--cards" id="family--4" value="4">4</button>
+				<button type="button" name="plan--cards" id="family--5" value="5">5</button>
+			
+				<form>
+				<h4>Choose GB per month</h4>
+					<div id="card--1">
+						<h5>1 sim card</h5>
+						
+						<ul>
+							<li>
+								<label for="family--1-1gb">
+								<input type="radio" name="plan--price" id="family--1-1gb" value="14"><span>£14.00</span></label>
+							</li>
+							<li>
+								<label for="family--1-10gb">
+								<input type="radio" name="plan--price" id="family--1-10gb" value="20"><span>£20.00</span></label>
+							</li>
+							<li>
+								<label for="family--1-20gb">
+								<input type="radio" name="plan--price" id="family--1-20gb" value="30"><span>£30.00</span></label>
+							</li>
+							<li>
+								<label for="family--1-40gb">
+								<input type="radio" name="plan--price" id="family--1-40gb" value="40"><span>£40.00</span></label>
+							</li>
+						</ul>
+					</div>
+					<div id="card--2">
+						<h5>2 sim cards</h5>
+						
+						<ul>
+							<li>
+								<label for="family--2-1gb">
+								<input type="radio" name="plan--price" id="family--2-1gb" value="21.20"><span>£21.20</span></label>
+							</li>
+							<li>
+								<label for="family--2-10gb">
+								<input type="radio" name="plan--price" id="family--2-10gb" value="32"><span>£32.00</span></label>
+							</li>
+							<li>
+								<label for="family--2-20gb">
+								<input type="radio" name="plan--price" id="family--2-20gb" value="50"><span>£50.00</span></label>
+							</li>
+							<li>
+								<label for="family--2-40gb">
+								<input type="radio" name="plan--price" id="family--2-40gb" value="14"><span>£68.00</span></label>
+							</li>
+						</ul>
+					</div>
+					<div id="card--3">
+						<h5>3 sim cards</h5>
+						
+						<ul>
+							<li>
+								<label for="family--3-1gb">
+								<input type="radio" name="plan--price" id="family--3-1gb" value="28.40"><span>£28.40</span></label>
+							</li>
+							<li>
+								<label for="family--3-10gb">
+								<input type="radio" name="plan--price" id="family--3-10gb" value="44"><span>£44.00</span></label>
+							</li>
+							<li>
+								<label for="family--3-20gb">
+								<input type="radio" name="plan--price" id="family--3-20gb" value="70"><span>£70.00</span></label>
+							</li>
+							<li>
+								<label for="family--3-40gb">
+								<input type="radio" name="plan--price" id="family--3-40gb" value="14"><span>£96.00</span></label>
+							</li>
+						</ul>
+					</div>
+					<div id="card--4">
+						<h5>4 sim cards</h5>
+						
+						<ul>
+							<li>
+								<label for="family--4-1gb">
+								<input type="radio" name="plan--price" id="family--4-1gb" value="35.60"><span>£35.60</span></label>
+							</li>
+							<li>
+								<label for="family--4-10gb">
+								<input type="radio" name="plan--price" id="family--4-10gb" value="56"><span>£56.00</span></label>
+							</li>
+							<li>
+								<label for="family--4-20gb">
+								<input type="radio" name="plan--price" id="family--4-20gb" value="90"><span>£90.00</span></label>
+							</li>
+							<li>
+								<label for="family--4-40gb">
+								<input type="radio" name="plan--price" id="family--4-40gb" value="14"><span>£124.00</span></label>
+							</li>
+						</ul>
+					</div>
+					<div id="card--5">
+						<h5>5 sim cards</h5>
+						
+						<ul>
+							<li>
+								<label for="family--5-1gb">
+								<input type="radio" name="plan--price" id="family--5-1gb" value="42.80"><span>£42.80</span></label>
+							</li>
+							<li>
+								<label for="family--5-10gb">
+								<input type="radio" name="plan--price" id="family--5-10gb" value="68"><span>£68.00</span></label>
+							</li>
+							<li>
+								<label for="family--5-20gb">
+								<input type="radio" name="plan--price" id="family--5-20gb" value="110"><span>£110.00</span></label>
+							</li>
+							<li>
+								<label for="family--5-40gb">
+								<input type="radio" name="plan--price" id="family--5-40gb" value="14"><span>£152.00</span></label>
+							</li>
+						</ul>
+					</div>
+					
+					<h4>Payment schedule</h4>
+					<ul>
+						<li>
+							<label for="family--monthly">
+							<input type="radio" name="plan--schedule" id="family--monthly" value="monthly">
+							<span>monthly</span></label>
+						</li>
+						<li>
+							<label for="family--annually">
+							<input  type="radio" name="plan--schedule" id="family--annually" value="annually">
+							<span>annually</span></label>
+						</li>
+					</ul>
+					
+					<button id="family--calculate">Calculate price</button>
+					
+				</form>
+				
+				<footer class="plan--cost">
+					<p></p>
+				</footer>
+			</section>
+		</div>
+
+	<footer class="site__footer">
+		<ul>
+			<li><a href="">Privacy</a></li>
+			<li><a href="">Terms of Use</a></li>
+			<li><a href="">Sitemap</a></li>
+		</ul>
+		<p>&copy; Lit 2018. All rights reserved.</p>
+	</footer>
+</div><!-- .site -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+<script src="js/engine-with-form.js"></script>
+</body>
+</html>

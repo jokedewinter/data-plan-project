@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Data plan packages</title>	
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap-skinny.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="site">
+		<header class="site__header">
+			<h1>Lit</h1>
+			<nav>
+				<ul>
+					<li><a href="">About</a></li>
+					<li><a href="">Packages</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+		</header><!-- .site__header -->
+			
+		<section class="site__hero">
+			<h1>Plan <small>your</small> <span>data</span></h1>
+			<p>Choose your data, text, minutes and amount of sim cards</p>
+		</section><!-- .site__hero -->
+		
+		<main class="site__main">
+			<header>
+				<h2>Choose your plan</h2>
+				<p>Pick a plan that suits you. If you exceed your download limit, your plan will freeze. We won't surprise you or charge any more than what has been agreed.</p>
+			</header>
+		
+			<!-- Tabbed navigation section for the three plans -->
+			<ul class="nav nav-tabs flex-column flex-sm-row" id="plan--tabs" role="tablist">
+				<li class="flex-sm-fill text-sm-center nav-item"><a class="nav-link active" id="wolf-tab" data-toggle="tab" href="#wolf" role="tab" aria-controls="wolf" aria-selected="true">
+					<img src="images/lone-wolf.svg" alt="">
+					
+					<h2>Lone Wolf</h2>
+				</a></li>
+				<li class="flex-sm-fill text-sm-center nav-item"><a class="nav-link" id="chatterbox-tab" data-toggle="tab" href="#chatterbox" role="tab" aria-controls="chatterbox" aria-selected="false">
+					<img src="images/chatterbox.svg" alt="">
+					
+					<h2>Chatterbox</h2>
+				</a></li>
+				<li class="flex-sm-fill text-sm-center nav-item"><a class="nav-link" id="family-tab" data-toggle="tab" href="#family" role="tab" aria-controls="family" aria-selected="false">
+					<img src="images/family.svg" alt="">
+					
+					<h2>Family</h2>
+				</a></li>
+			</ul>
+				
+			<!--- The individual plans -->
+			<div class="tab-content" id="plan--content">
+				<section id="wolf" class="tab-pane fade show active plan" role="tabpanel" aria-labelledby="wolf-tab">
+					<header>
+						<h1>Data only</h1>
+						<p>You spend all your time surfing the net and never talk to anyone (in person).</p> 
+					</header>
+					<article class="tab--choose">
+						<h2>Choose GB per month</h2>					
+						<button class="wolf--price" data-gb="3GB"  data-price="15.00"><span>3GB</span>£15.00</button>
+						<button class="wolf--price" data-gb="6GB"  data-price="17.00"><span>6GB</span>£17.00</button>
+						<button class="wolf--price" data-gb="15GB" data-price="22.00"><span>15GB</span>£22.00</button>
+						<button class="wolf--price" data-gb="30GB" data-price="27.00"><span>30GB</span>£27.00</button>
+					</article>
+					<footer class="wolf--cost schedule">
+						<section>
+							<h3>Monthly</h3>
+							<p class="schedule--gb"></p>
+							<p class="schedule--monthly"><strong></strong></p>
+							<button id="wolf--monthtly">Buy</button>
+						</section>
+						
+						<section>
+							<h3>Annually</h3>
+							<p class="schedule--gb"></p>
+							<p class="schedule--annually"><strong></strong></p>
+							<button id="wolf--annually">Buy</button>
+						</section>
+					</footer>
+				</section>
+				
+				<section id="chatterbox" class="tab-pane fade plan" role="tabpanel" aria-labelledby="chatterbox-tab">
+					<header>
+						<h1>Data, minutes and texts</h1>
+						<p>You love chatting so much, you're on a permanent drip feed to keep you hydrated.</p>
+					</header>
+					<article class="tab--choose">
+						<h2>Choose GB per month</h2>
+						<button class="chatterbox--price" data-gb="1GB"  data-price="14"><span>1GB</span>£14.00</button>
+						<button class="chatterbox--price" data-gb="6GB"  data-price="18"><span>6GB</span>£18.00</button>
+						<button class="chatterbox--price" data-gb="10GB" data-price="20"><span>10GB</span>£20.00</button>
+						<button class="chatterbox--price" data-gb="20GB" data-price="30"><span>20GB</span>£30.00</button>
+						
+						<section class="min">
+							<h2>Choose minutes per month</h2>
+							<button class="chatterbox--min" data-min="180 min"  data-price="3"><span>180 min</span>+ £3.00</button>
+							<button class="chatterbox--min" data-min="300 min"  data-price="5"><span>300 min</span>+ £5.00</button>
+							<button class="chatterbox--min" data-min="600 min" data-price="10"><span>600 min</span>+ £10.00</button>
+							<button class="chatterbox--min" data-min="unlimited" data-price="12"><span>unlimited</span>+ £12.00</button>
+						</section>
+					</article><!-- .tab--choose -->
+					<footer class="chatterbox--cost schedule">
+						<section>
+							<h4>Monthly</h4>
+							<p class="schedule--gb"></p>
+							<p class="schedule--min"></p>
+							<p class="schedule--monthly"><strong></strong></p>
+							<button id="wolf--monthtly">Buy</button>
+						</section>
+						
+						<section>
+							<h4>Annually</h4>
+							<p class="schedule--gb"></p>
+							<p class="schedule--min"></p>
+							<p class="schedule--annually"><strong></strong></p>
+							<button id="wolf--annually">Buy</button>
+						</section>
+					</footer>
+				</section>
+				
+				<section id="family" class="tab-pane fade plan" role="tabpanel" aria-labelledby="family-tab">
+					<header>
+						<h1>Up to 4 sim cards with data, minutes and texts</h1>
+						<p>You are the army. Or at least that's what if feels like when you're organising just about anything.</p>
+					</header>
+					<article class="tab--choose">
+						<h2>Choose number of sim cards</h2>					
+						<button class="family--cards" data-cards="1">1</button>
+						<button class="family--cards" data-cards="2">2</button>
+						<button class="family--cards" data-cards="3">3</button>
+						<button class="family--cards" data-cards="4">4</button>
+						<button class="family--cards" data-cards="5">5</button>
+						
+						<section class="gb">
+							<h2>Choose GB per month</h2>
+							<section id="family--1">
+								<h5>1 sim card</h5>
+								<button class="family-1" data-gb="1GB"  data-price="14"><span>1GB</span>£14.00</button>
+								<button class="family-1" data-gb="10GB" data-price="20"><span>10GB</span>£20.00</button>
+								<button class="family-1" data-gb="20GB" data-price="30"><span>20GB</span>£30.00</button>
+								<button class="family-1" data-gb="40GB" data-price="40"><span>40GB</span>£40.00</button>
+							</section>
+							<section id="family--2">
+								<h5>2 sim cards</h5>
+								<button class="family-2" data-gb="1GB"  data-price="21.20"><span>1GB</span>£21.20</button>
+								<button class="family-2" data-gb="10GB" data-price="32"><span>10GB</span>£32.00</button>
+								<button class="family-2" data-gb="20GB" data-price="50"><span>20GB</span>£50.00</button>
+								<button class="family-2" data-gb="40GB" data-price="14"><span>40GB</span>£14.00</button>
+							</section>
+							<section id="family--3">
+								<h5>3 sim cards</h5>
+								<button class="family-3" data-gb="1GB"  data-price="28.40"><span>1GB</span>£28.40</button>
+								<button class="family-3" data-gb="10GB" data-price="44"><span>10GB</span>£44.00</button>
+								<button class="family-3" data-gb="20GB" data-price="70"><span>20GB</span>£70.00</button>
+								<button class="family-3" data-gb="40GB" data-price="96"><span>40GB</span>£96.00</button>
+							</section>
+							<section id="family--4">
+								<h5>4 sim cards</h5>
+								<button class="family-4" data-gb="1GB"  data-price="35.60"><span>1GB</span>£35.60</button>
+								<button class="family-4" data-gb="10GB" data-price="56"><span>10GB</span>£56.00</button>
+								<button class="family-4" data-gb="20GB" data-price="90"><span>20GB</span>£90.00</button>
+								<button class="family-4" data-gb="40GB" data-price="124"><span>40GB</span>£124.00</button>
+							</section>
+							<section id="family--5">
+								<h5>5 sim cards</h5>
+								<button class="family-5" data-gb="1GB"  data-price="42.80"><span>1GB</span>£42.80</button>
+								<button class="family-5" data-gb="10GB" data-price="68"><span>10GB</span>£68.00</button>
+								<button class="family-5" data-gb="20GB" data-price="110"><span>20GB</span>£110.00</button>
+								<button class="family-5" data-gb="40GB" data-price="152"><span>40GB</span>£152.00</button>
+							</section>
+						</section>
+					</article><!-- .tab--choose -->
+					<footer class="family--cost schedule">
+						<section>
+							<h4>Monthly</h4>
+							<p class="schedule--cards"></p>
+							<p class="schedule--gb"></p>
+							<p class="schedule--monthly"></p>
+							<button id="family--monthtly">Buy</button>
+						</section>
+						<section>
+							<h4>Annually</h4>
+							<p class="schedule--cards"></p>
+							<p class="schedule--gb"></p>
+							<p class="schedule--annually"><strong></strong></p>
+							<button id="family--annually">Buy</button>
+						</section>
+					</footer>
+				</section>
+			</div>
+		</main>
+			
+		<footer class="site__footer">
+			
+			<section class="footer--menu">
+				<h5>Menu</h5>
+				<ul>
+					<li><a href="">About</a></li>
+					<li><a href="">Packages</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</section><!-- .footer--connect -->
+			
+			<section class="footer--connect">
+				<h5>Connect with us</h5>
+				<ul>
+					<li><a href=""><img src="images/facebook.svg" alt=""><span class="screen-reader-text">Facebook</span></a></li>
+					<li><a href=""><img src="images/google.svg" alt=""><span class="screen-reader-text">Google</span></a></li>
+					<li><a href=""><img src="images/twitter.svg" alt=""><span class="screen-reader-text">Twitter</span></a></li>
+				</ul>
+			</section><!-- .footer--connect -->
+			
+			<section class="footer--legal">
+				<ul>
+					<li><a href="">Privacy</a></li>
+					<li><a href="">Terms of Use</a></li>
+					<li><a href="">Sitemap</a></li>
+				</ul>
+					
+				<p>&copy; Lit 2018. All rights reserved.</p>
+			</section><!-- .footer--legal -->
+		</footer><!-- .site__footer -->
+	</div><!-- .site -->
+			
+	<script src="js/jquery-3.3.1.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/engine-with-buttons-alt.js"></script>
+</body>
+</html>

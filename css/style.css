@@ -1,0 +1,432 @@
+
+/* --------------- 
+ * Body
+ * ------------------------------------------- */
+
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #444;
+
+	background-image: url('../images/waves.jpg');
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.site {
+	width: 90%;
+	max-width: 1200px;
+	margin: 2em auto;
+}
+
+@media screen and (min-width: 1199px ) {
+	
+	body { background-size: contain; }
+}
+
+/* --------------- 
+ * Accessibility: screen reader text
+ * ------------------------------------------- */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+}
+
+.screen-reader-text:focus {
+	background-color: red;
+	border-radius: 3px;
+	clip: auto;
+	color: white;
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	height: auto;
+	line-height: normal;
+	outline: none;
+	padding: 0.7em 2em;
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em;
+	text-decoration: none;
+	width: auto;
+	z-index: 100; /* Above WP toolbar */
+}
+
+/* --------------- 
+ * Typography
+ * font weights: 400, 600, 900
+ * ------------------------------------------- */
+
+h2 {
+	font-size: 30px;
+	font-weight: 900;
+}
+
+h5 {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	color: #444;
+}
+
+a:hover {
+	color: #8A8CAC;
+	border-bottom: 1px solid #8A8CAC;	
+}
+
+button {
+	margin: 1em 0;
+	padding: 0.5em;
+	color: #444;
+}
+
+
+/* --------------- 
+ * Masthead
+ * ------------------------------------------- */
+
+.site__header h1 {
+	display: inline-block;
+	margin: 0 0 0.5em 0;
+}
+
+nav { margin-bottom: 5em; }
+nav ul { margin: 0; }
+
+nav li {
+	display: inline-block;
+	margin-right: 2em;
+}
+
+nav a {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+.site__header + * { clear: both; }
+
+
+@media screen and (min-width: 550px ) {
+	
+	nav {
+		float: right;
+		margin-top: 1em;
+	}
+	
+	nav ul li {
+		margin-right: 0;
+		margin-left: 2em;
+	}
+}
+
+/* --------------- 
+ * Site hero
+ * ------------------------------------------- */
+
+.site__hero { margin-bottom: 10em; }
+
+.site__hero h1 {
+	font-size: 100px;
+	font-weight: 900;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+.site__hero small,
+.site__hero span { display: block; }
+
+.site__hero h1 small {
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-left: 180px;
+}
+
+.site__hero h1 span {
+	margin-top: -20px;
+	margin-left: 100px;
+}
+
+.site__hero p {
+	font-size: 24px;
+	margin-left: 100px;
+	font-weight: 600;
+}
+
+
+@media screen and ( min-width: 700px ) {
+
+	.site__hero p {
+		max-width: 50%;
+		font-weight: 600;
+		font-size: 35px;
+	}
+}
+
+/* --------------- 
+ * Plan intro section
+ * ------------------------------------------- */
+
+.site__main header { margin-bottom: 3em; }
+
+@media screen and ( min-width: 600px ) {
+	.site__main header {
+		width: 33%;
+		margin-bottom: 5em;
+	}	
+}
+
+
+/* --------------- 
+ * Plan tabs
+ * ------------------------------------------- */
+
+.nav-tabs,
+.nav-tabs .nav-link { border: transparent; }
+
+#plan--tabs h2 {
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+#plan--tabs a { text-align: center; }
+button span { display: block; }
+.nav-link img { width: 90px; }
+
+@media screen and ( min-width: 800px ) {
+	
+	#plan--tabs h2 { font-size: 20px; }
+}
+
+
+/* --------------- 
+ * Plan colours
+ * ------------------------------------------- */
+
+#wolf-tab.active,
+#wolf { background-color: #fdeb93; }
+
+#chatterbox-tab.active,
+#chatterbox { background-color: #d8d9ed; }
+
+#family-tab.active,
+#family { background-color: #c6f9f2; }
+
+#wolf .tab--choose button,
+#wolf .schedule section,
+#family .tab--choose button.active,
+#family .schedule button { background-color: #EEC441; }
+
+#chatterbox .tab--choose button,
+#chatterbox .schedule section,
+#wolf .tab--choose button.active,
+#wolf .schedule button { background-color: #8A8CAC; }
+
+#family .tab--choose button,
+#family .schedule section,
+#chatterbox .tab--choose button.active,
+#chatterbox .schedule button { background-color: #66C1B5; }
+
+#wolf-tab.nav-link:hover { color: #EEC441; }
+#chatterbox-tab.nav-link:hover { color: #8A8CAC; }
+#family-tab.nav-link:hover { color: #66C1B5; }
+
+/* --------------- 
+ * Plan pane structure
+ * ------------------------------------------- */
+
+.schedule {
+	display: flex;
+	margin-top: 1em;
+	padding-top: 1em;
+	justify-content: space-between;
+}
+
+.schedule section { padding: 2em; }
+
+@media screen and ( min-width: 500px ) {
+	
+	.schedule { justify-content: flex-start; }
+	.schedule section { margin-right: 2em; }
+}
+
+@media screen and ( min-width: 800px ) {
+	
+	.tab-pane header {
+		width: 28%;
+		height: 100%;
+		float: left;
+		margin-right: 10%;
+	}
+	
+	.tab--choose {
+		width: 60%;
+		float: right;
+	}
+	
+	.schedule {
+		width: 60%;
+		float: right;
+	}	
+}
+
+
+/* --------------- 
+ * Plan pane inside
+ * ------------------------------------------- */
+
+.tab-pane {
+	padding: 2em 5%;
+	overflow: hidden;
+}
+
+.tab-pane h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.2;
+}
+
+.tab-pane h2 {
+	font-size: 18px;
+	font-weight: 900;
+	margin-top: 2em;
+}
+
+/* --------------- 
+ * Tab pane buttons
+ * ------------------------------------------- */
+
+.tab--choose button {
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0.5em 1em;
+}
+
+.tab--choose button span {
+	font-weight: 900;
+	font-size: 18px;
+	margin-bottom: 0.5em;
+}
+
+/* --------------- 
+ * Payment schedule
+ * ------------------------------------------- */
+
+.schedule h3 {
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-bottom: 2em;
+}
+
+.schedule--monthly,
+.schedule--annually { font-weight: 900; }
+
+.schedule button {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 0.5em 1em;
+	//background-color: #444;
+	color: #fff;
+}
+
+
+/* --------------- 
+ * Site Footer
+ * ------------------------------------------- */
+
+.site__footer {
+	border-top: 2px solid #aaa;
+	padding-top: 3em;
+	margin-top: 3em;
+	clear: both;
+}
+
+.footer--menu,
+.footer--connect { margin-bottom: 3em; }
+
+.footer--menu li {
+	font-size: 16px;
+	margin-bottom: 0.5em;
+}
+
+.footer--connect a {
+	width: 45px;
+	height: 45px;
+	background-color: #B1B3DB;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+}
+
+.footer--connect img { margin-top: 0.3em; }
+
+.footer--legal li,
+.footer--connect li {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.footer--connect li { margin-right: 1em; }
+.footer--legal li { margin-right: 1em; }
+
+.footer--legal li:after {
+	content: "|";
+	float: right;
+	margin-left: 1.1em;
+}
+
+.footer--legal li:last-of-type:after { content: ""; }
+
+.footer--legal a:hover {
+	color: #B1B3DB;
+	border-bottom: 1px solid #B1B3DB;
+}
+
+.footer--legal p {
+	font-size: 14px;
+	margin-top: 0.5em;
+}
+
+
+@media screen and ( min-width: 600px ) {
+	
+	.footer--menu,
+	.footer--connect { width: 50%; }
+	.footer--menu { float: left; }
+	
+	.footer--connect { 
+		float: right; 
+		text-align: right; 
+	}
+	
+	.footer--connect li { 
+		margin-right: 0;
+		margin-left: 1em; 
+	}
+	
+	.footer--legal { clear: both; }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>google</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="google" fill="#4A4A4A">
+            <polygon id="Page-1" points="24.25 14.875 22.375 14.875 22.375 13 20.875 13 20.875 14.875 19 14.875 19 16.375 20.875 16.375 20.875 18.25 22.375 18.25 22.375 16.375 24.25 16.375"></polygon>
+            <path d="M13,14.875 L13,17.215 L16.270375,17.215 C16.01875,18.625 14.79625,19.6525 13,19.6525 C11.020375,19.6525 9.41125,17.97625 9.41125,15.99625 C9.41125,14.015875 11.020375,12.34375 13,12.34375 C13.8925,12.34375 14.69125,12.65125 15.320875,13.25125 L15.320875,13.255 L17.0125,11.56375 C15.97375,10.59625 14.62,10 13,10 C9.685,10 7,12.685 7,16 C7,19.315 9.685,22 13,22 C16.465,22 18.759625,19.5625 18.759625,16.134625 C18.759625,15.695875 18.71875,15.27625 18.64375,14.875 L13,14.875 Z" id="Page-1"></path>
+        </g>
+    </g>
+</svg>
