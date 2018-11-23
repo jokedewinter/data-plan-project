@@ -8,3 +8,6 @@ This uses <form> elements to deal with the choices.
 
 ## index.html + index-with-buttons-alt.html
 This uses <button> elements for all the choices.
+
+Demo: [View site](https://jokedewinter.github.io/data-plan-project/)
+
